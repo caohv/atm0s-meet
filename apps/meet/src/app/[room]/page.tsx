@@ -1,6 +1,8 @@
 import { Room } from './containers'
 import { cookies, headers } from 'next/headers'
 
+export const runtime = 'edge'
+
 export default function Page() {
   const headersList = headers()
   const username = cookies().get('username')
